@@ -1,9 +1,7 @@
 package Practice1;
 
-import Practice1.OtherPackage.ClassProtected;
-
-public class ClassDefault extends ClassParent{
-    protected String parentNameProtect(ClassParent p){
-        return p.getName();
+public class ClassDefault{
+    public static void changeName(int age, ClassParent p){
+        p.age = age;
     }
 }
