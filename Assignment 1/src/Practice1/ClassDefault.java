@@ -1,4 +1,9 @@
 package Practice1;
 
-public class ClassDefault {
+import Practice1.OtherPackage.ClassProtected;
+
+public class ClassDefault extends ClassParent{
+    protected String parentNameProtect(ClassParent p){
+        return p.getName();
+    }
 }
